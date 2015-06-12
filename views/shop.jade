@@ -1,0 +1,179 @@
+extends layout
+
+block content
+  h1#header 
+    a( href="/" ) Chella Man Art •••
+  nav
+    ul.nav.navbar-nav.center-block
+        li: a( href="/about") About
+        li: a( href="/artwork" ) Artwork
+        li: a( href="/shop" ) Shop
+        li: a( href="/contact" ) Contact
+  .page
+    .shop-form
+      h1 CHELLA MAN APPAREL
+      p 
+        | To place an order for a t-shirt, please fill out the form below. Every piece is custom made by the artist, so no two shirts are exactly the same. T-shirts are $15.00 + shipping. You may browse the 
+        a( href="/artwork/apparel") lookbook 
+        | to see past designs.
+
+      script(type='text/javascript').
+        var submitted=false;
+      iframe#hidden_iframe(name='hidden_iframe', style='display:none;', onload="if(submitted) {window.location='/shop/confirmation';}")
+      form(action='https://docs.google.com/forms/d/1S34E0P7Rdm0wdYTjY45JOAgrzqRkoGcjNJv_AjnDA2A/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true;')
+        ol.ss-question-list(role='list', style='padding-left: 0')
+          .ss-form-question.errorbox-good(role='listitem')
+            .ss-item.ss-item-required.ss-text(dir='ltr')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_1943347177')
+                  .ss-q-title
+                    | Name
+                    label(for='itemView.getDomIdToLabel()', aria-label='(Required field)')
+                    span.ss-required-asterisk(aria-hidden='true') *
+                  .ss-q-help.ss-secondary-text(dir='ltr') Please include your first and last name
+                input#entry_1943347177.ss-q-short(type='text', name='entry.1943347177', value='', dir='auto', aria-label='Name Please include your first and last name ', aria-required='true', required='', title='')
+                #792906927_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good(role='listitem')
+            .ss-item.ss-item-required.ss-radio(dir='ltr')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_1651517274')
+                  .ss-q-title
+                    | Size
+                    label(for='itemView.getDomIdToLabel()', aria-label='(Required field)')
+                    span.ss-required-asterisk(aria-hidden='true') *
+                  .ss-q-help.ss-secondary-text(dir='ltr')
+                ul.ss-choices(role='radiogroup', aria-label='Size  ')
+                  li.ss-choice-item
+                    label
+                      span.ss-choice-item-control.goog-inline-block
+                        input#group_831273119_4.ss-q-radio(type='radio', name='entry.831273119', value='Adult Small', role='radio', aria-label='Adult Small', required='', aria-required='true')
+                      span.ss-choice-label Adult Small
+                  li.ss-choice-item
+                    label
+                      span.ss-choice-item-control.goog-inline-block
+                        input#group_831273119_5.ss-q-radio(type='radio', name='entry.831273119', value='Adult Medium', role='radio', aria-label='Adult Medium', required='', aria-required='true')
+                      span.ss-choice-label Adult Medium
+                  li.ss-choice-item
+                    label
+                      span.ss-choice-item-control.goog-inline-block
+                        input#group_831273119_6.ss-q-radio(type='radio', name='entry.831273119', value='Adult Large', role='radio', aria-label='Adult Large', required='', aria-required='true')
+                      span.ss-choice-label Adult Large
+                  li.ss-choice-item
+                    label
+                      span.ss-choice-item-control.goog-inline-block
+                        input#group_831273119_7.ss-q-radio(type='radio', name='entry.831273119', value='Adult X-Large', role='radio', aria-label='Adult X-Large', required='', aria-required='true')
+                      span.ss-choice-label Adult X-Large
+                #1651517274_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good(role='listitem')
+            .ss-item.ss-item-required.ss-select(dir='ltr')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_449016567')
+                  .ss-q-title
+                    | Quantity
+                    label(for='itemView.getDomIdToLabel()', aria-label='(Required field)')
+                    span.ss-required-asterisk(aria-hidden='true') *
+                  .ss-q-help.ss-secondary-text(dir='ltr') How many would you like?
+                select#entry_449016567(name='entry.449016567', aria-label='Quantity How many would you like? ', aria-required='true', required='')
+                  option(value='')
+                  option(value='1') 1
+                  option(value='2') 2
+                  option(value='3') 3
+                  option(value='4') 4
+                  option(value='5') 5
+                  option(value='6') 6
+                  option(value='7') 7
+                  option(value='8') 8
+                  option(value='9') 9
+                  option(value='10') 10
+                  option(value='11') 11
+                  option(value='12') 12
+                  option(value='13') 13
+                  option(value='14') 14
+                  option(value='15') 15
+                  option(value='16') 16
+                  option(value='17') 17
+                  option(value='18') 18
+                  option(value='19') 19
+                  option(value='20') 20
+                  option(value='21') 21
+                  option(value='22') 22
+                  option(value='23') 23
+                  option(value='24') 24
+                  option(value='25') 25
+                  option(value='26') 26
+                  option(value='27') 27
+                  option(value='28') 28
+                  option(value='29') 29
+                  option(value='30') 30
+                  option(value='31') 31
+                  option(value='32') 32
+                  option(value='33') 33
+                  option(value='34') 34
+                  option(value='35') 35
+                  option(value='36') 36
+                  option(value='37') 37
+                  option(value='38') 38
+                  option(value='39') 39
+                  option(value='40') 40
+                  option(value='41') 41
+                  option(value='42') 42
+                  option(value='43') 43
+                  option(value='44') 44
+                  option(value='45') 45
+                  option(value='46') 46
+                  option(value='47') 47
+                  option(value='48') 48
+                  option(value='49') 49
+                  option(value='50') 50
+                .required-message This is a required question
+          .ss-form-question.errorbox-good(role='listitem')
+            .ss-item.ss-item-required.ss-paragraph-text(dir='ltr')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_1412041996')
+                  .ss-q-title
+                    | Shipping Address
+                    label(for='itemView.getDomIdToLabel()', aria-label='(Required field)')
+                    span.ss-required-asterisk(aria-hidden='true') *
+                  .ss-q-help.ss-secondary-text(dir='ltr')
+                textarea#entry_1412041996.ss-q-long(name='entry.1412041996', rows='8', cols='0', dir='auto', aria-label='Shipping Address  ', aria-required='true', required='')
+                #373806846_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good(role='listitem')
+            .ss-item.ss-item-required.ss-text(dir='ltr')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_1488042055')
+                  .ss-q-title
+                    | Email
+                    label(for='itemView.getDomIdToLabel()', aria-label='(Required field)')
+                    span.ss-required-asterisk(aria-hidden='true') *
+                  .ss-q-help.ss-secondary-text(dir='ltr')
+                input#entry_1488042055.ss-q-short(type='text', name='entry.1488042055', value='', dir='auto', aria-label='Email  ', aria-required='true', required='', title='')
+                #1315151977_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good(role='listitem')
+            .ss-item.ss-paragraph-text(dir='ltr')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_657696889')
+                  .ss-q-title
+                    | Details, Comments, Notes etc.
+                  .ss-q-help.ss-secondary-text(dir='ltr')
+                    | If there is something specific you are looking for, let her know! For special business inquiries, please email 
+                    a(href='mailto:rachelman26@gmail.com') rachelman26@gmail.com
+                    | .
+                textarea#entry_657696889.ss-q-long(name='entry.657696889', rows='8', cols='0', dir='auto', aria-label='Details, Comments, Notes etc. If there is something specific you are looking for, let her know! For special business inquiries, please email rachelman26@gmail.com. ')
+                #801424101_errorMessage.error-message
+                .required-message This is a required question
+          input(type='hidden', name='draftResponse', value='[,,"-2246752041894435337"]\
+          ')
+          input(type='hidden', name='pageHistory', value='0')
+          input(type='hidden', name='fbzx', value='-2246752041894435337')
+          .ss-item.ss-navigate
+            table#navigation-table
+              tbody
+                tr
+                  td#navigation-buttons.ss-form-entry.goog-inline-block(dir='ltr')
+                    input#ss-submit.jfk-button.jfk-button-action(type='submit', name='submit', value='Submit')
+
+    br.clear

@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1#header 
+    a( href="/" ) Chella Man Art •••
+  nav
+    ul.nav.navbar-nav.center-block
+        li: a( href="/about") About
+        li: a( href="/artwork" ) Artwork
+        li: a( href="/shop" ) Shop
+        li: a( href="/contact" ) Contact
+  img(src="/images/chella.png")
+

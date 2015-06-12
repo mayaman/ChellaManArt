@@ -11,18 +11,32 @@ var users = require('./routes/users');
 var app = express();
 
 // view engine setup
+// tells express we want to use jade & where views is
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(logger('dev'));
+// calls middleware functions
+app.use(logger('dev')); // logs incoming requests on console
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); // static middleware 
+                                                         // used for serving static files
 
 app.use('/', routes);
+app.use('/contact', routes);
+app.use('/artwork', routes);
+app.use('/artwork/sketches', routes);
+app.use('/artwork/paint', routes);
+app.use('/artwork/pastels', routes);
+app.use('/artwork/photography', routes);
+app.use('/artwork/collages', routes);
+app.use('/artwork/apparel', routes);
+app.use('/shop', routes);
+app.use('/shop/confirmation', routes);
+app.use('/about', routes);
 app.use('/users', users);
 
 // catch 404 and forward to error handler

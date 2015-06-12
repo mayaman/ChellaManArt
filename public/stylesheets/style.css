@@ -1,8 +1,381 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #8BDAFF;
+}
+
+a:hover {
+  color: #598CA3;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2em;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    HEADER
+  //////////////////////////////////////////////////
+*/
+
+#header {
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: black;
+}
+
+#header a {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#header a:hover {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+}
+
+ul.nav.navbar-nav {
+  text-align: center;
+  float: none;
+  padding: 0;
+  margin: 0px;
+}
+
+.navbar-nav>li {
+  float: none;
+  display: inline-block;
+  color: white;
+}
+
+nav a {
+  color: white;
+  font-family: 'Merriweather', serif;
+  background-color: black;
+}
+
+.nav > li > a,
+.nav > li > a {
+  border: 1px solid black;
+  padding: 5px;
+  padding-top: 0;
+  margin: 10px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: white;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  vertical-align: center;
+  display: block;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    PAGES
+  //////////////////////////////////////////////////
+*/
+
+div.page {
+  border-top: 1px solid white;
+  margin: 10px;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  min-height: 100% !important;
+  height: auto !important;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    CONTACT
+  //////////////////////////////////////////////////
+*/
+.info {
+  display: inline-block;
+  float: left;
+  width: 60%;
+}
+
+img#contact {
+  float: right;
+  display: inline-block;
+  width: 33%;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.contact-info p {
+  font-size: 1.5em;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    ABOUT
+  //////////////////////////////////////////////////
+*/
+.about-info p {
+  line-height: 1.7em;
+  margin: 1%
+  text-align: justify;
+}
+
+.about-imgs {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+img#about {
+  width: 23%;
+  margin: 1%;
+  display: inline;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    ARTWORK
+  //////////////////////////////////////////////////
+*/
+
+img#art {
+  width: 325px;
+  height: 325px;
+}
+
+.art-item {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  width: 45%;
+}
+
+img#art:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.art-item a {
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+.art-item #medium {
+  padding: 5px;
+  font-size: 2.5em;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  margin-left: 40px;
+}
+
+.right {
+  float: right;
+  margin-right: 40px;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    ARCHIVE
+  //////////////////////////////////////////////////
+*/
+
+.piece {
+  width: 25%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.piece img {
+  margin: 10px;
+  width: 90%;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    FOOTER
+  //////////////////////////////////////////////////
+*/
+
+
+.footer, .push {
+  width: 100%;
+  height: 1.5em;
+  text-align: center;
+  display: block;
+  border-top: 1px solid white;
+  opacity: .8;
+}
+
+.footer p {
+  vertical-align: middle;
+  color: gray;
+  margin-top: 10px;
+  font-size: .9em;
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -1.5em;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    FORM
+  //////////////////////////////////////////////////
+*/
+
+img#shop {
+  display: none;
+  float: right;
+  width: 200px;
+}
+
+.shop-form {
+  font-size: 1.5em;
+  color: white;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.shop-form p {
+  font-size: 1em;
+}
+
+.shop-form ul {
+  list-style-type: none;
+}
+
+.ss-q-help.ss-secondary-text {
+  font-size: .8em;
+  padding: 3px;
+  padding-left: 0;
+}
+
+span.ss-choice-label {
+  padding: 5px;
+}
+
+.ss-choice-item input {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.required-message {
+  display: none;
+}
+
+.ss-required-asterisk {
+  color: red;
+  padding: 3px;
+}
+
+ul.ss-choices {
+  padding: 0px;
+}
+
+.ss-form-question {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.shop-form input#entry_1943347177, input#entry_1488042055, .shop-form select, .shop-form textarea {
+  display: block;
+  color: black;
+  font-family: 'Merriweather', serif;
+  font-size: .8em;
+  padding: 5px;
+}
+
+input#ss-submit {
+  background: none;
+  outline: 1px solid gray;
+}
+
+input#ss-submit:hover {
+  background: gray;
+  outline: 1px solid gray;
+}
+
+/* 
+  //////////////////////////////////////////////////
+    CONFIRMATION
+  //////////////////////////////////////////////////
+*/
+
+.payment-instructions {
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.shop-form-confirmation {
+  font-size: 1.5em;
+  color: white;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.shop-form-confirmation p {
+  font-size: 1em;
+}
+
+#checkout a {
+  display: inline-block;
+  padding: 3px;
+  border-bottom: 1px solid black;
+}
+
+#checkout a:hover {
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding: 3px;
 }

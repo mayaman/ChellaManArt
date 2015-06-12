@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1#header 
+    a( href="/" ) Chella Man Art •••
+  nav
+    ul.nav.navbar-nav.center-block
+        li: a( href="/about") About
+        li: a( href="/artwork" ) Artwork
+        li: a( href="/shop" ) Shop
+        li: a( href="/contact" ) Contact
+  .page
+    .info
+        h2 thoughts, feedback, and ideas are welcome
+        br
+        .contact-info
+          p email: 
+              a( href="mailto:rachelman26@gmail.com") rachelman26@gmail.com
+          p twitter: 
+              a( href="https://twitter.com/rachelmanart") @rachelmanart
+          p instagram (personal): 
+              a( href="https://instagram.com/chella.man/") @chella.man
+          p instagram (art): 
+              a( href="https://instagram.com/chellamanart") @chellamanart
+    img#contact(src="/images/contact.jpg")
+  br.clear

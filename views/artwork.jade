@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1#header 
+    a( href="/" ) Chella Man Art •••
+  nav
+    ul.nav.navbar-nav.center-block
+        li: a( href="/about") About
+        li: a( href="/artwork" ) Artwork
+        li: a( href="/shop" ) Shop
+        li: a( href="/contact" ) Contact
+  .page
+    .art-item.left
+      a( href="/artwork/sketches")
+        img#art(src="/images/sketches.jpg")
+        p#medium sketches
+    .art-item.right
+      a( href="/artwork/paint")
+        img#art(src="/images/paint.jpg")
+        p#medium paint
+    .art-item.left
+      a( href="/artwork/apparel")
+        img#art(src="/images/apparel.jpg")
+        p#medium apparel
+    .art-item.right
+      a( href="/artwork/photography")    
+        img#art(src="/images/photography.jpg")
+        p#medium photography
+    .art-item.left
+      a( href="/artwork/pastels")
+        img#art(src="/images/pastels.jpg")
+        p#medium pastels
+    .art-item.right
+      a( href="/artwork/collages")
+        img#art(src="/images/collages.jpg")
+        p#medium collages
+  br.clear
