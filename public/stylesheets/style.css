@@ -177,16 +177,15 @@ img#about {
 */
 
 img#art {
-  width: 325px;
-  height: 325px;
+  width: 350px;
+  height: 350px;
 }
 
 .art-item {
   display: inline-block;
   text-align: center;
   padding: 5px;
-  margin: 10px;
-  width: 45%;
+  width: 50%;
 }
 
 img#art:hover {
@@ -205,7 +204,7 @@ img#art:hover {
   display: inline-block;
 }
 
-.left {
+/*.left {
   float: left;
   margin-left: 40px;
 }
@@ -213,7 +212,7 @@ img#art:hover {
 .right {
   float: right;
   margin-right: 40px;
-}
+}*/
 
 /* 
   //////////////////////////////////////////////////
